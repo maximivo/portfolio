@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <script
+            src="https://kit.fontawesome.com/a1b50df935.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            media="screen and (min-width: 600px)"
+            href="src/widescreen.css"
+        />
+        <link rel="stylesheet" href="src/styles.css" />
+    </head>
+    <body>
+        <div class="container main-screen">
+            <div class="header">
+                <div class="row search">
+                    <input
+                        class="input-search"
+                        type="text"
+                        name="search"
+                        id="searchCity"
+                        placeholder="Search city..."
+                    />
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+
+                <div class="row current-weather">
+                    <div class="current-data">
+                        <p class="time" id="time"></p>
+                        <h1 class="cityName">Edmonton</h1>
+                        <p class="country">Canada</p>
+                    </div>
+                    <div class="weather-description-decor">
+                        <p class="text-decor">CLOUDY</p>
+                    </div>
+                </div>
+            </div>
+            <!--Image of weather-->
+            <div class="row background">
+                <div class="sunny">
+                    <div class="sun-hands hand-1"></div>
+                    <div class="sun-hands hand-2"></div>
+                    <div class="sun-hands hand-3"></div>
+                </div>
+                <div class="cloudy">
+                    <div class="cloud cloud-p1"></div>
+                    <div class="cloud cloud-p2"></div>
+                    <div class="cloud cloud-p3"></div>
+                    <div class="cloud cloud-p4"></div>
+                </div>
+
+                <div class="partly-cloudy">
+                    <div class="p-sun">
+                        <div class="p-sun-hands p-hand-1"></div>
+                        <div class="p-sun-hands p-hand-2"></div>
+                        <div class="p-sun-hands p-hand-3"></div>
+                    </div>
+                    <div class="p-cloudy">
+                        <div class="p-cloud p-cloud-p1"></div>
+                        <div class="p-cloud p-cloud-p2"></div>
+                        <div class="p-cloud p-cloud-p3"></div>
+                        <div class="p-cloud p-cloud-p4"></div>
+                    </div>
+                </div>
+                <div class="windy">
+                    <div class="hand1">
+                        <div class="cicle1"></div>
+                        <div class="fon1"></div>
+                        <div class="branch1"></div>
+                    </div>
+                    <div class="hand2">
+                        <div class="cicle2"></div>
+                        <div class="fon2"></div>
+                        <div class="branch2"></div>
+                    </div>
+                    <div class="hand3">
+                        <div class="cicle3"></div>
+                        <div class="fon3"></div>
+                        <div class="branch3"></div>
+                    </div>
+                    <div class="hand4">
+                        <div class="cicle4"></div>
+                        <div class="fon4"></div>
+                        <div class="branch4"></div>
+                    </div>
+                </div>
+                <div class="stormy">
+                    <div class="thunder"></div>
+                    <div class="stormy-p-cloudy">
+                        <div class="p-cloud p-cloud-p1"></div>
+                        <div class="p-cloud p-cloud-p2"></div>
+                        <div class="p-cloud p-cloud-p3"></div>
+                        <div class="p-cloud p-cloud-p4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--end-->
+            <div class="main">
+                <div class="row current-temperature">
+                    <h2 class="temp">
+                        <span class="c">16°C</span> <span class="f">(°F)</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container scroll-screen">
+            <div class="row forecast-options">
+                <div class="button today-default">
+                    <p>Today</p>
+                </div>
+                <div class="button forecast-5-days"><p>5 Days</p></div>
+            </div>
+            <div class="forecast today">
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Today, 06:00 AM</p>
+                    </div>
+                    <div class="icon">⛈️</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Today, 12:00 PM</p>
+                    </div>
+                    <div class="icon">⛅</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Today, 06:00 PM</p>
+                    </div>
+                    <div class="icon">☀️</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Today, 12:00 AM</p>
+                    </div>
+                    <div class="icon">🌧️</div>
+                </div>
+                <div class="sign"><p>Coded by: Olena Maksymiv</p></div>
+            </div>
+            <div class="forecast days-5">
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Thr, 27 Jul</p>
+                    </div>
+                    <div class="icon">☀️</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Fri, 28 Jul</p>
+                    </div>
+                    <div class="icon">⛅</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Sut, 29 Jul</p>
+                    </div>
+                    <div class="icon">⛈️</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Sun, 30 Jul</p>
+                    </div>
+                    <div class="icon">⛈️</div>
+                </div>
+                <div class="row-sm">
+                    <div class="details">
+                        <h3 class="temp-forecast">20°C</h3>
+                        <p>Mon, 31 Jul</p>
+                    </div>
+                    <div class="icon">🌧️</div>
+                </div>
+                <div class="sign"><p>Coded by: Olena Maksymiv</p></div>
+            </div>
+        </div>
+        <script src="src/app.js"></script>
+    </body>
+</html>
