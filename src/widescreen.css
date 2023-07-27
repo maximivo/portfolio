@@ -15,11 +15,23 @@ body {
 }
 .main-screen {
     overflow: hidden;
+    height: 95vh;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    min-width: 300px;
 }
 .header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 90%;
+    margin: 1em auto;
+    max-width: 900px;
+    min-width: 300px;
 }
 
 .main {
@@ -71,13 +83,18 @@ h1 {
     font-size: 1.1rem;
 }
 
-.forecast-options,
 .current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.forecast-options {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .temp .c {
     font-size: 4rem;
 }
@@ -160,10 +177,10 @@ h1 {
 .background {
     height: 30%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: self-end;
     position: relative;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 /*Sunny weather*/

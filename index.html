@@ -10,38 +10,52 @@
         ></script>
         <link
             rel="stylesheet"
-            media="screen and (min-width: 600px)"
+            media="screen and (min-width: 900px)"
             href="src/widescreen.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (min-width: 600px) and (orientation: landscape)"
+            href="src/test.css"
         />
         <link rel="stylesheet" href="src/styles.css" />
     </head>
     <body>
+        <div class="header">
+            <div class="row search">
+                <input
+                    class="input-search"
+                    type="text"
+                    name="search"
+                    id="searchCity"
+                    placeholder="Search city..."
+                />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
         <div class="container main-screen">
-            <div class="header">
-                <div class="row search">
-                    <input
-                        class="input-search"
-                        type="text"
-                        name="search"
-                        id="searchCity"
-                        placeholder="Search city..."
-                    />
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <div class="row current-weather">
+                <div class="current-data">
+                    <p class="time" id="time"></p>
+                    <h1 class="cityName">Edmonton</h1>
+                    <p class="country">Canada</p>
                 </div>
 
-                <div class="row current-weather">
-                    <div class="current-data">
-                        <p class="time" id="time"></p>
-                        <h1 class="cityName">Edmonton</h1>
-                        <p class="country">Canada</p>
-                    </div>
-                    <div class="weather-description-decor">
-                        <p class="text-decor">CLOUDY</p>
+                <!--test-->
+                <div class="main">
+                    <div class="row current-temperature">
+                        <h2 class="temp">
+                            <span class="c">16°C</span>
+                            <span class="f">(°F)</span>
+                        </h2>
                     </div>
                 </div>
             </div>
             <!--Image of weather-->
             <div class="row background">
+                <div class="weather-description-decor">
+                    <p class="text-decor">CLOUDY</p>
+                </div>
                 <div class="sunny">
                     <div class="sun-hands hand-1"></div>
                     <div class="sun-hands hand-2"></div>
@@ -101,14 +115,8 @@
             </div>
 
             <!--end-->
-            <div class="main">
-                <div class="row current-temperature">
-                    <h2 class="temp">
-                        <span class="c">16°C</span> <span class="f">(°F)</span>
-                    </h2>
-                </div>
-            </div>
         </div>
+
         <div class="container scroll-screen">
             <div class="row forecast-options">
                 <div class="button today-default">
